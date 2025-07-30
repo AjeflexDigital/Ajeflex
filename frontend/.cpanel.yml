@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export NODE_ENV=production
+    - yarn install
+    - yarn build
+    - rsync -a build/ ../public_html/
