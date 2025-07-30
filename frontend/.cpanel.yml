@@ -5,3 +5,4 @@ deployment:
     - yarn install
     - yarn build
     - rsync -a build/ ../public_html/
+    - echo "Deployment completed successfully."
